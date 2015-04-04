@@ -198,7 +198,6 @@ class Connection(object):
         self.url = url
 
     def get(self, path):
-        print(path)
         return requests.get(self.url + path).json()
 
     @property
